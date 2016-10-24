@@ -31,7 +31,7 @@ var bio = {
 	"role": "Michael Speranza - Looking for Entry-level Front-end Oppurtunity",
 	"contacts": {
 		"mobile": "2012751982",
-		"github": "mikespe",
+		"github": "https://github.com/mikespe",
 		"email": "mikesperanza34@gmail.com",
 		"location": "Glen Rock, NJ"
 	},
@@ -49,7 +49,8 @@ var bio = {
 	],
 	"biopic": "images/me.PNG",
 	"welcomeMessage": "Hey, Welcome to Michael Speranza's Resume",
-	"githublink": "https://github.com/mikespe"
+	"githublink": "https://github.com/mikespe",
+	"resumelink": "https://docs.google.com/document/d/1PHuvJZ5vSpaUvBwst4Gxx_wVsizSlYZgzjhhcWMgS9Y/edit?usp=sharing"
 };
 
 var work = {
@@ -180,6 +181,8 @@ bio.display = function(){
 	$("#topContacts").append(formattedHTMLlocation);
 	$("#footerContacts").append(formattedHTMLlocation);
 	var formattedHTMLlocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	var formattedHTMLresume = HTMLresume.replace("%data%", bio.resumelink);
+	$("#topContacts").prepend(formattedHTMLresume);
 	};
 
 //$("#main").append(internationalizeButton);
