@@ -36,16 +36,22 @@ var bio = {
 		"location": "Glen Rock, NJ"
 	},
 	"skills": [
-		"Responsive Design",
 		"HTML",
 		"CSS",
 		"JavaScript",
 		"jQuery",
 		"Bootstrap",
 		"Grunt",
+		"Gulp",
+		"MySql",
+		"Wordpress",
 		"CRP Optimization",
+		"Responsive Design",
 		"Image Optimization",
-		"Mobile-Friendly Design"
+		"Mobile-Friendly Design",
+		"Git",
+		"CSS frameworks",
+		"Problem Solving"
 	],
 	"biopic": "images/me.PNG",
 	"welcomeMessage": "Hey, Welcome to Michael Speranza's Resume",
