@@ -38,6 +38,8 @@ var bio = {
 	"skills": [
 		"HTML",
 		"CSS",
+		"Wireframing",
+		"Mockup to Code",
 		"JavaScript",
 		"jQuery",
 		"Bootstrap",
