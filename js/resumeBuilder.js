@@ -64,6 +64,14 @@ var bio = {
 var work = {
 	"jobs" : [
 	{
+		"employer" : "H Grant Designs LLC",
+		"link" : "http://hgrantdesigns.com/",
+		"title" : "Frontend Programming Consultant",
+		"location" : "Glen Rock, NJ",
+		"dates" : "October 2016 to Present",
+		"description" : "Solve and consult on a variety of HTML,CSS,Javascript,Design, and Optimization issues"
+	},
+	{
 		"employer" : "Konica Minolta",
 		"link" : "http://konicaminolta.us/",
 		"title" : "Purchasing Administrator",
@@ -71,6 +79,7 @@ var work = {
 		"dates" : "Dec 2014 to Nov 2015",
 		"description" : "Reconciled any and all problems involving the process of receiving and sending Purchase orders to vendors"
 	},
+
 	{
 		"employer" : "General Exports Network",
 		"link" : "http://www.globalexportnetwork.com/en/about-us/",
