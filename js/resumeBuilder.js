@@ -174,32 +174,34 @@ education.display = function(){
 
 bio.display = function(){
 	$("#header").append(HTMLskillsStart);
+	var topc = $('#topContacts');
+	var footc = $("#footerContacts");
 	for(x=0; x<bio.skills.length; x++) {
 		var formattedskills = HTMLskills.replace("%data%", bio.skills[x]);
 		$("#skills").append(formattedskills);
 		}
 	var formattedname = HTMLheaderName.replace("%data%", name);
 	var formattedHTMLemail = HTMLemail.replace("%data%", bio.contacts.email);
-	$("#topContacts").append(formattedHTMLemail);
-	$("#footerContacts").append(formattedHTMLemail);
+	topc.append(formattedHTMLemail);
+	footc.append(formattedHTMLemail);
 	var formattedrole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").prepend(formattedrole);
 	$("#header").prepend(formattedname);
 	var formattedcell = HTMLmobile.replace("%data%", bio.contacts.mobile);
-	$("#topContacts").prepend(formattedcell);
-	$("#footerContacts").prepend(formattedcell);
+	topc.prepend(formattedcell);
+	footc.prepend(formattedcell);
 	var pic = HTMLbioPic.replace("%data%", bio.biopic);
 	$("#main").prepend(pic);
 	var formattedwelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").prepend(formattedwelcome);
 	var formattedHTMLgithub = HTMLgithub.replace("%data%", bio.contacts.github).replace("#", bio.contacts.githublink);
-	$("#topContacts").append(formattedHTMLgithub);
-	$("#footerContacts").append(formattedHTMLgithub);
-	$("#topContacts").append(formattedHTMLlocation);
-	$("#footerContacts").append(formattedHTMLlocation);
+	topc.append(formattedHTMLgithub);
+	footc.append(formattedHTMLgithub);
 	var formattedHTMLlocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	topc.append(formattedHTMLlocation);
+	footc.append(formattedHTMLlocation);
 	var formattedHTMLresume = HTMLresume.replace("%data%", bio.resumelink);
-	$("#topContacts").prepend(formattedHTMLresume);
+	topc.prepend(formattedHTMLresume);
 	};
 
 //$("#main").append(internationalizeButton);
