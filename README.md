@@ -1,6 +1,6 @@
 #Summary
 
-A Webpage of my Resume, constructed using HTML, CSS, light JavaScript and jQuery
+A Webpage of my Resume, constructed using HTML, CSS, light JavaScript and jQuery.
 
 #Install and View
 
