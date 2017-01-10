@@ -38,14 +38,17 @@ var bio = {
 	"skills": [
 		"HTML",
 		"CSS",
-		"Wireframing",
-		"Mockup to Code",
 		"JavaScript",
 		"jQuery",
 		"Bootstrap",
+		"Wireframing",
+		"Mockup to Code",
 		"Grunt",
 		"Gulp",
-		"MySql",
+		"Sql",
+		"php",
+		"Python",
+		"AJAX",
 		"Wordpress",
 		"CRP Optimization",
 		"Responsive Design",
@@ -93,6 +96,13 @@ var work = {
 
 var projects = {
 	"projects" : [
+		{
+			"title" : "Neighborhood Map",
+			"link" : "https://github.com/mikespe/neighborhood-map",
+			"dates" : "December 2016",
+			"description" : "Interactive Map Created Entirely by me using Google Maps API, Foursquare API, Javascript, jQuery and Knockout.JS",
+			"images" : ["images/neighborhoodmap.PNG"]
+		},
 	{
 		"title" : "Frogger game",
 		"link" : "https://mikespe.github.io/FroggerJS/",
@@ -100,13 +110,6 @@ var projects = {
 		"description" : "Browser frogger using Object oriented JS",
 		"images" : ["images/frogger.PNG"]
 	},
-	{
-		"title" : "Responsive Blog",
-		"link" : "https://mikespe.github.io/responsive-portfolio-example/",
-		"dates" : "July 2016",
-		"description" : "Simple picture and link layout, Responsive design",
-		"images" : ["images/bootstrap.PNG"]
-	}
 	]
     };
 
