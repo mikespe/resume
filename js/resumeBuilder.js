@@ -19,7 +19,7 @@ var education = {
 	},
 	{
 		"title" : "Front end programming Nanodegree",
-		"date" : "June 2016 to present",
+		"date" : "June 2016 to January 2017",
 		"url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001?v=fe1",
 		"school" : "Udacity"
 	}
@@ -28,9 +28,8 @@ var education = {
 
 var bio = {
 	"name": "Michael Speranza",
-	"role": "Michael Speranza - Looking for Entry-level Front-end Oppurtunity",
 	"contacts": {
-		"mobile": "2012751982",
+		"mobile": "2018207354",
 		"github": "https://github.com/mikespe",
 		"email": "mikesperanza34@gmail.com",
 		"location": "Glen Rock, NJ"
@@ -41,55 +40,54 @@ var bio = {
 		"JavaScript",
 		"jQuery",
 		"Bootstrap",
+		"Reactjs",
+		"MVC concepts",
+		"Using API to create a frontend UI",
 		"Wireframing",
-		"Mockup to Code",
-		"Grunt",
-		"Gulp",
-		"Sql",
-		"php",
+		"Regular Expressions",
 		"Python",
-		"AJAX",
+		"JSON and XML",
+		"AJAX and JS Promises",
 		"Wordpress",
-		"CRP Optimization",
+		"Rendering Debugging and Optimization",
 		"Responsive Design",
-		"Image Optimization",
 		"Mobile-Friendly Design",
-		"Git",
+		"Git, but need more xp in team setting",
 		"CSS frameworks",
 		"Problem Solving"
 	],
 	"biopic": "images/me.PNG",
-	"welcomeMessage": "Hey, Welcome to Michael Speranza's Resume",
+	"welcomeMessage": "Welcome to Michael Speranza's Resume",
 	"githublink": "https://github.com/mikespe",
-	"resumelink": "https://docs.google.com/document/d/1PHuvJZ5vSpaUvBwst4Gxx_wVsizSlYZgzjhhcWMgS9Y/edit?usp=sharing"
+	"resumelink": "https://drive.google.com/file/d/1dxn_EVttTBPjUmVyRo8ySBIg-9ZwGvJ3/view?usp=sharing"
 };
 
 var work = {
 	"jobs" : [
 	{
+		"employer" : "Wyndham Destination Network - RCI.com",
+		"link" : "rci.com",
+		"title" : "Web Content Specialist",
+		"location" : "Parsippany, NJ",
+		"dates" : "August 2017 to Present",
+		"description" : "Create landing pages, manage urls and analytics, manage content scheduling, debug and fix all user facing issues, implemented redesign for entire help and special offer sections, python scripting to edit xml and generate pages"
+	},
+	{
+		"employer" : "Hayward Industries",
+		"link" : "https://www.hayward-pool.com",
+		"title" : "Web Development Intern",
+		"location" : "Elizabeth, NJ",
+		"dates" : "Feb 2017 to July 2017",
+		"description" : "Created wireframes and full landing pages, debug and optimize department .js pages, create counter functionality using js, utilize photoshop to edit front page banners and edit designs"
+	},
+
+	{
 		"employer" : "H Grant Designs LLC",
 		"link" : "http://hgrantdesigns.com/",
 		"title" : "Frontend Programming Consultant",
 		"location" : "Glen Rock, NJ",
-		"dates" : "October 2016 to Present",
-		"description" : "Solve and consult on a variety of HTML,CSS,Javascript,Design, and Optimization issues"
-	},
-	{
-		"employer" : "Konica Minolta",
-		"link" : "http://konicaminolta.us/",
-		"title" : "Purchasing Administrator",
-		"location" : "Ramsey, NJ",
-		"dates" : "Dec 2014 to Nov 2015",
-		"description" : "Reconciled any and all problems involving the process of receiving and sending Purchase orders to vendors"
-	},
-
-	{
-		"employer" : "General Exports Network",
-		"link" : "http://www.globalexportnetwork.com/en/about-us/",
-		"title" : "Research Analyst",
-		"location" : "Mahwah, NJ",
-		"dates" : "Feb 2014 to Dec 2014",
-		"description" : "Provided detailed reports and research rundowns on several marketplaces and products"
+		"dates" : "October 2016 to February 2017",
+		"description" : "Solve and consult on a variety of HTML, CSS, design, and content issues"
 	}
 	]
 };
@@ -97,19 +95,20 @@ var work = {
 var projects = {
 	"projects" : [
 		{
+			"title" : "My Reads",
+			"link" : "https://github.com/mikespe/myreads",
+			"dates" : "August 2017",
+			"description" : "implemented the shelf functionality by adding state and binding the function that handles shelf changing of specific books to the state",
+			"images" : ["images/myreads.png"]
+		},
+
+		{
 			"title" : "Neighborhood Map",
 			"link" : "https://github.com/mikespe/neighborhood-map",
 			"dates" : "December 2016",
 			"description" : "Interactive Map Created Entirely by me using Google Maps API, Foursquare API, Javascript, jQuery and Knockout.JS",
 			"images" : ["images/neighborhoodmap.PNG"]
 		},
-	{
-		"title" : "Frogger game",
-		"link" : "https://mikespe.github.io/FroggerJS/",
-		"dates" : "September 2016",
-		"description" : "Browser frogger using Object oriented JS",
-		"images" : ["images/frogger.PNG"]
-	},
 	]
     };
 
@@ -187,8 +186,6 @@ bio.display = function(){
 	var formattedHTMLemail = HTMLemail.replace("%data%", bio.contacts.email);
 	topc.append(formattedHTMLemail);
 	footc.append(formattedHTMLemail);
-	var formattedrole = HTMLheaderRole.replace("%data%", bio.role);
-	$("#header").prepend(formattedrole);
 	$("#header").prepend(formattedname);
 	var formattedcell = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	topc.prepend(formattedcell);
